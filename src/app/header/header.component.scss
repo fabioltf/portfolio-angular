@@ -1,0 +1,377 @@
+:host {
+  position: relative;
+  #logoNavDiv {
+    //padding: 20px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--darkblue);
+    z-index: 999;
+    height: 200px;
+
+    #logoDiv {
+      app-logo {
+        padding-left: 10vw;
+        z-index: 999;
+      }
+    }
+
+    #navBar {
+      gap: 40px;
+      padding-right: 10vw;
+
+      #burgerIcon {
+        display: none;
+        cursor: pointer;
+      }
+
+      #navLinksDiv {
+        gap: 40px;
+
+        #languageSelect {
+          gap: 10px;
+          border: 1px solid #fff;
+          border-radius: 10px;
+          padding: 2px 8px;
+
+          span:first-child {
+            cursor: pointer;
+          }
+
+          span:last-child {
+            cursor: pointer;
+          }
+        }
+      }
+
+      #navLinksDiv > a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 600;
+        transition: transform 0.3s ease;
+      }
+
+      #navLinksDiv > a:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  @media only screen and (min-width: 320px) {
+    #logoNavDiv {
+      height: 100px;
+
+      #logoDiv {
+        z-index: 3;
+        app-logo {
+          padding-left: 10vw;
+        }
+      }
+
+      #navBar {
+        flex-direction: column;
+        gap: 40px;
+        padding-right: 10vw;
+
+        #burgerIcon {
+          display: block;
+          width: 38px;
+          z-index: 4;
+        }
+
+        #navLinksDiv {
+          background-color: #141d2fa4;
+          gap: 40px;
+          flex-direction: column;
+          justify-content: flex-start;
+          height: 100vh;
+          padding-top: 40%;
+          transform: translateX(100%); // Initially hidden on the right
+          transition: transform 0.3s ease-in-out; // Smooth transition
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 100%;
+          z-index: 2;
+          &.open {
+            transform: translateX(0); // Slide in from right
+          }
+        }
+
+        #navLinksDiv > a {
+          color: 5% #fff;
+          text-decoration: none;
+          font-size: 24px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 481px) {
+    #logoNavDiv {
+      height: 100px;
+      app-logo {
+        padding-left: 10vw;
+      }
+
+      #navBar {
+        gap: 40px;
+        padding-right: 10vw;
+
+        #burgerIcon {
+          display: block;
+          width: 40px;
+          z-index: 4;
+        }
+
+        #navLinksDiv {
+          gap: 40px;
+        }
+
+        #navLinksDiv > a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 20px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    #logoNavDiv {
+      height: 100px;
+      app-logo {
+        padding-left: 10vw;
+      }
+
+      #navBar {
+        flex-direction: row;
+        gap: 40px;
+        padding-right: 10vw;
+
+        #burgerIcon {
+          display: none;
+
+          z-index: -1;
+        }
+
+        #navLinksDiv {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          gap: 40px;
+          padding-top: 0;
+          height: auto;
+          position: initial;
+          transform: translateX(0);
+        }
+
+        .nav-links {
+          display: initial;
+        }
+
+        #navLinksDiv > a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 20px;
+          font-weight: 600;
+          display: initial;
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    #logoNavDiv {
+      height: 100px;
+      app-logo {
+        padding-left: 10vw;
+      }
+
+      #navBar {
+        gap: 40px;
+        padding-right: 10vw;
+
+        #navLinksDiv {
+          gap: 40px;
+        }
+
+        #navLinksDiv > a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 20px;
+          font-weight: 600;
+          display: initial;
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    #logoNavDiv {
+      height: 100px;
+      app-logo {
+        padding-left: 10vw;
+      }
+
+      #navBar {
+        gap: 40px;
+        padding-right: 10vw;
+
+        #navLinksDiv {
+          gap: 40px;
+        }
+
+        #navLinksDiv > a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 20px;
+          font-weight: 600;
+          display: initial;
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1400px) {
+    #logoNavDiv {
+      height: 100px;
+      app-logo {
+        padding-left: 10vw;
+      }
+
+      #navBar {
+        gap: 40px;
+        padding-right: 10vw;
+
+        #navLinksDiv {
+          gap: 40px;
+        }
+
+        #navLinksDiv > a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 20px;
+          font-weight: 600;
+          display: initial;
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1600px) {
+    #logoNavDiv {
+      height: 100px;
+      app-logo {
+        padding-left: 10vw;
+      }
+
+      #navBar {
+        gap: 40px;
+        padding-right: 10vw;
+
+        #navLinksDiv {
+          gap: 40px;
+        }
+
+        #navLinksDiv > a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 20px;
+          font-weight: 600;
+          display: initial;
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1900px) {
+    #logoNavDiv {
+      height: 100px;
+      app-logo {
+        padding-left: 10vw;
+      }
+
+      #navBar {
+        gap: 40px;
+        padding-right: 10vw;
+
+        #navLinksDiv {
+          gap: 40px;
+        }
+
+        #navLinksDiv > a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 20px;
+          font-weight: 600;
+          display: initial;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 2200px) {
+    #logoNavDiv {
+      max-width: 2000px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+/*
+
+  @media screen and (max-width: 480px) {
+    #logoNavDiv {
+      position: relative;
+      app-logo {
+      }
+
+      #navBar {
+        background-color: #112e639a;
+        flex-direction: column;
+        padding: 0;
+        width: 100%;
+        height: 600px;
+        position: absolute;
+        top: 100px;
+        #burgerIcon {
+          display: initial;
+          width: 60px;
+        }
+      }
+
+      #navBar > a {
+        font-size: 48px;
+      }
+    }
+  }
+
+
+
+  #logoNavDiv {
+      position: relative;
+      height: 140px;
+      app-logo {
+      }
+
+      #navBar {
+        background-color: #112e639a;
+        flex-direction: column;
+
+        #burgerIcon {
+          display: initial;
+          width: 60px;
+        }
+      }
+
+      #navBar > a {
+        font-size: 48px;
+        display: none;
+
+  */

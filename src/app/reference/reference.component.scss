@@ -1,0 +1,627 @@
+:host {
+  .referencePhotoDiv {
+    overflow: hidden;
+    padding-top: 260px;
+
+    .referenceDiv {
+      gap: 40px;
+      position: relative;
+      width: 40%;
+      padding: 40px 60px;
+      border: 6px solid var(--green);
+      border-radius: 20px;
+
+      div {
+        gap: 20px;
+        width: 100%;
+
+        hr {
+          border: 2px solid var(--purple);
+          width: 60%;
+        }
+      }
+    }
+
+    .photoDiv {
+      img {
+        width: 240px;
+        border-radius: 50%;
+        border: 4px solid var(--purple);
+      }
+    }
+
+    .horizontalLine {
+      hr {
+        border: 2px solid var(--purple);
+        width: 120px;
+      }
+    }
+  }
+
+  .referenceDiv:before {
+    content: url("/assets/img/quote-mark.svg");
+    position: absolute;
+    transform: scale(1);
+  }
+
+  #paginationDiv {
+    padding-top: 30px;
+    gap: 20px;
+    img {
+      width: 50px;
+      cursor: pointer;
+    }
+
+    #dots {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+
+      .dot {
+        width: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 320px) {
+    .referencePhotoDiv {
+      font-size: 14px;
+      flex-direction: column-reverse;
+      padding-top: 260px;
+      gap: 40px;
+      .referenceDiv {
+        gap: 20px;
+        height: 500px;
+        justify-content: space-between;
+        width: 90%;
+        padding: 6px;
+        border: 4px solid var(--green);
+        border-radius: 20px;
+
+        div {
+          gap: 20px;
+          width: 100%;
+
+          hr {
+            border: 2px solid var(--purple);
+            width: 50%;
+          }
+
+          p {
+            width: 50%;
+            font-size: 12px;
+          }
+        }
+      }
+
+      .photoHrDiv {
+        width: 100%;
+        .photoDiv {
+          img {
+            width: 180px;
+            border-radius: 50%;
+            border: 4px solid var(--purple);
+          }
+        }
+
+        .horizontalLine {
+          width: 20%;
+          hr {
+            border: 2px solid var(--purple);
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .referenceDiv:before {
+      transform: scale(0.5);
+      top: -50px;
+      left: -30px;
+    }
+
+    #paginationDiv {
+      padding-top: 30px;
+      gap: 20px;
+      img {
+        width: 50px;
+        cursor: pointer;
+      }
+
+      #dots {
+        gap: 10px;
+        img {
+          width: 8px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 481px) {
+    .referencePhotoDiv {
+      flex-direction: column-reverse;
+      padding-top: 260px;
+      gap: 40px;
+      .referenceDiv {
+        gap: 20px;
+        height: 400px;
+        justify-content: space-between;
+        width: 80%;
+        padding: 10px 20px;
+        border: 6px solid var(--green);
+        border-radius: 20px;
+
+        div {
+          gap: 20px;
+          width: 100%;
+
+          hr {
+            border: 2px solid var(--purple);
+            width: 40%;
+          }
+
+          p {
+            width: 60%;
+            font-size: 14px;
+          }
+        }
+      }
+
+      .photoHrDiv {
+        width: 100%;
+        .photoDiv {
+          img {
+            width: 180px;
+            border-radius: 50%;
+            border: 4px solid var(--purple);
+          }
+        }
+
+        .horizontalLine {
+          width: 30%;
+          hr {
+            border: 2px solid var(--purple);
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .referenceDiv:before {
+      transform: scale(0.6);
+    }
+
+    #paginationDiv {
+      padding-top: 30px;
+      gap: 20px;
+      img {
+        width: 50px;
+        cursor: pointer;
+      }
+
+      #dots {
+        gap: 10px;
+        img {
+          width: 8px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .referencePhotoDiv {
+      flex-direction: column-reverse;
+      padding-top: 260px;
+      gap: 40px;
+      .referenceDiv {
+        gap: 20px;
+        height: 280px;
+        justify-content: space-between;
+        overflow: visible;
+        width: 70%;
+        padding: 10px 20px;
+        border: 6px solid var(--green);
+        border-radius: 20px;
+
+        div {
+          gap: 20px;
+          width: 100%;
+
+          hr {
+            border: 2px solid var(--purple);
+            width: 50%;
+          }
+
+          p {
+            width: 50%;
+            font-size: 16px;
+          }
+        }
+      }
+
+      .photoHrDiv {
+        width: 100%;
+        .photoDiv {
+          img {
+            width: 180px;
+            border-radius: 50%;
+            border: 4px solid var(--purple);
+          }
+        }
+
+        .horizontalLine {
+          width: 35%;
+          hr {
+            border: 2px solid var(--purple);
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .referenceDiv:before {
+      transform: scale(0.8);
+      top: -50px;
+      left: -60px;
+    }
+
+    #paginationDiv {
+      padding-top: 30px;
+      gap: 20px;
+      img {
+        width: 50px;
+        cursor: pointer;
+      }
+
+      #dots {
+        gap: 10px;
+        img {
+          width: 8px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .referencePhotoDiv {
+      font-size: 14px;
+      flex-direction: row;
+      padding-top: 340px;
+      gap: 20px;
+      .referenceDiv {
+        gap: 20px;
+        height: 260px;
+        justify-content: space-between;
+        width: 60%;
+        padding: 10px 20px;
+        border: 6px solid var(--green);
+        border-radius: 20px;
+
+        div {
+          gap: 20px;
+          width: 100%;
+
+          hr {
+            border: 2px solid var(--purple);
+            width: 60%;
+          }
+
+          p {
+            width: 40%;
+          }
+        }
+      }
+
+      .photoHrDiv {
+        width: auto;
+        .photoDiv {
+          img {
+            width: 160px;
+            border-radius: 50%;
+            border: 4px solid var(--purple);
+          }
+        }
+
+        .horizontalLine {
+          width: 40px;
+          hr {
+            border: 2px solid var(--purple);
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .referenceDiv:before {
+    }
+
+    #paginationDiv {
+      padding-top: 30px;
+      gap: 20px;
+      img {
+        width: 50px;
+        cursor: pointer;
+      }
+
+      #dots {
+        gap: 10px;
+        img {
+          width: 8px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    .referencePhotoDiv {
+      font-size: 16px;
+      padding-top: 260px;
+      gap: 4%;
+      .referenceDiv {
+        gap: 20px;
+        height: 320px;
+        justify-content: space-between;
+        width: 50%;
+        padding: 10px 20px;
+        border: 6px solid var(--green);
+        border-radius: 20px;
+
+        div {
+          gap: 20px;
+          width: 100%;
+
+          hr {
+            border: 2px solid var(--purple);
+            width: 50%;
+          }
+
+          p {
+            width: 50%;
+          }
+        }
+      }
+
+      .photoHrDiv {
+        .photoDiv {
+          img {
+            width: 200px;
+            border-radius: 50%;
+            border: 4px solid var(--purple);
+          }
+        }
+
+        .horizontalLine {
+          hr {
+            border: 2px solid var(--purple);
+            width: 120px;
+          }
+        }
+      }
+    }
+
+    .referenceDiv:before {
+    }
+
+    #paginationDiv {
+      padding-top: 30px;
+      gap: 20px;
+      img {
+        width: 50px;
+        cursor: pointer;
+      }
+
+      #dots {
+        gap: 10px;
+        img {
+          width: 8px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1400px) {
+    .referencePhotoDiv {
+      padding-top: 260px;
+      gap: 6%;
+      .referenceDiv {
+        gap: 40px;
+        height: 340px;
+        justify-content: space-between;
+        width: 40%;
+        padding: 20px 40px;
+        border: 6px solid var(--green);
+        border-radius: 20px;
+
+        div {
+          gap: 20px;
+          width: 100%;
+
+          hr {
+            border: 2px solid var(--purple);
+            width: 50%;
+          }
+
+          p {
+            width: 50%;
+          }
+        }
+      }
+
+      .photoHrDiv {
+        width: auto;
+        .photoDiv {
+          img {
+            width: 220px;
+            border-radius: 50%;
+            border: 4px solid var(--purple);
+          }
+        }
+
+        .horizontalLine {
+          width: 120px;
+          hr {
+            border: 2px solid var(--purple);
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .referenceDiv:before {
+    }
+
+    #paginationDiv {
+      padding-top: 30px;
+      gap: 20px;
+      img {
+        width: 50px;
+        cursor: pointer;
+      }
+
+      #dots {
+        gap: 10px;
+        img {
+          width: 8px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1600px) {
+    .referencePhotoDiv {
+      padding-top: 260px;
+      gap: 10%;
+      .referenceDiv {
+        gap: 40px;
+        height: 340px;
+        justify-content: space-between;
+        width: 40%;
+        padding: 40px 60px;
+        border: 6px solid var(--green);
+        border-radius: 20px;
+
+        div {
+          gap: 20px;
+          width: 100%;
+
+          hr {
+            border: 2px solid var(--purple);
+            width: 60%;
+          }
+
+          p {
+            width: 40%;
+          }
+        }
+      }
+
+      .photoHrDiv {
+        width: auto;
+        .photoDiv {
+          img {
+            width: 240px;
+            border-radius: 50%;
+            border: 4px solid var(--purple);
+          }
+        }
+
+        .horizontalLine {
+          width: 140px;
+          hr {
+            border: 2px solid var(--purple);
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .referenceDiv:before {
+    }
+
+    #paginationDiv {
+      padding-top: 30px;
+      gap: 20px;
+      img {
+        width: 50px;
+        cursor: pointer;
+      }
+
+      #dots {
+        gap: 10px;
+        img {
+          width: 8px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1900px) {
+    .referencePhotoDiv {
+      justify-content: flex-end;
+      padding-top: 260px;
+      gap: 10%;
+      .referenceDiv {
+        height: 320px;
+        gap: 40px;
+        justify-content: space-between;
+        width: 40%;
+        padding: 40px 60px;
+        border: 6px solid var(--green);
+        border-radius: 20px;
+
+        div {
+          gap: 20px;
+          width: 100%;
+
+          hr {
+            border: 2px solid var(--purple);
+            width: 60%;
+          }
+
+          p {
+            width: 40%;
+          }
+        }
+      }
+
+      .photoHrDiv {
+        width: auto;
+        .photoDiv {
+          img {
+            width: 240px;
+            border-radius: 50%;
+            border: 4px solid var(--purple);
+          }
+        }
+
+        .horizontalLine {
+          width: 160px;
+          hr {
+            border: 2px solid var(--purple);
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .referenceDiv:before {
+    }
+
+    #paginationDiv {
+      padding-top: 30px;
+      gap: 20px;
+      img {
+        width: 50px;
+        cursor: pointer;
+      }
+
+      #dots {
+        gap: 10px;
+        img {
+          width: 8px;
+        }
+      }
+    }
+  }
+}

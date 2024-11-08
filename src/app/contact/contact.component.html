@@ -1,0 +1,119 @@
+<div id="hrLineContactDiv" class="flexContainerStart" data-aos="zoom-in">
+  <hr />
+  <h1>{{ "contact" | translate }}</h1>
+</div>
+
+<div id="incitementContactDiv" class="flexContainerAround">
+  <div id="incitement" class="flexContainerCol" data-aos="slide-right">
+    <h1>{{ "needDev" | translate }}?</h1>
+    <p>{{ "contactMeForm" | translate }}</p>
+  </div>
+
+  <div id="contactForm" data-aos="slide-left">
+    <form
+      (ngSubmit)="onSubmit(contactForm)"
+      #contactForm="ngForm"
+      class="flexContainerCol"
+    >
+      <div
+        id="fullnameDiv"
+        class="flexContainerCol"
+        [ngClass]="{
+          warning: !fullname.valid && fullname.touched,
+          passed: fullname.valid
+        }"
+      >
+        <input
+          #fullname="ngModel"
+          [(ngModel)]="contactData.fullname"
+          type="text"
+          id="fullname"
+          name="fullname"
+          minlength="4"
+          [attr.placeholder]="'placeholderName' | translate"
+          required
+          (input)="validateForm()"
+        />
+        @if(!fullname.valid && fullname.touched) {
+        <p id="errorName">{{ "nameReq" | translate }}</p>
+        }
+      </div>
+
+      <div
+        id="emailDiv"
+        class="flexContainerCol"
+        [ngClass]="{
+          warning: !email.valid && email.touched,
+          passed: email.valid
+        }"
+      >
+        <input
+          #email="ngModel"
+          [(ngModel)]="contactData.email"
+          type="email"
+          id="email"
+          name="email"
+          pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+          [attr.placeholder]="'placeholderEmail' | translate"
+          required
+          (input)="validateForm()"
+        />
+        @if(!email.valid && fullname.touched) {
+        <p id="errorEmail">{{ "emailReq" | translate }}</p>
+        }
+      </div>
+      <div
+        id="messageDiv"
+        class="flexContainerCol"
+        [ngClass]="{
+          warning: !message.valid && message.touched,
+          passed: message.valid
+        }"
+      >
+        <textarea
+          #message="ngModel"
+          [(ngModel)]="contactData.message"
+          id="message"
+          name="message"
+          [attr.placeholder]="'placeholderMsg' | translate"
+          style="height: 200px"
+          minlength="4"
+          required
+          (input)="validateForm()"
+        ></textarea>
+        @if(!message.valid && message.touched) {
+        <p id="errorMsg">{{ "msgReq" | translate }}</p>
+        }
+      </div>
+
+      <div id="checkboxPolicyDiv" class="flexContainerCol">
+        <div id="checkboxPolicyInDiv" class="flexContainer">
+          <input
+            type="checkbox"
+            id="checkbox"
+            name="checkbox"
+            [(ngModel)]="isCheckboxChecked"
+            (change)="onCheckboxChange($event)"
+          />
+          <p>
+            {{ "policy1" | translate }}
+
+            <a id="privacyPolicy" href="/impressum">{{
+              "policy2" | translate
+            }}</a>
+
+            {{ "policy3" | translate }}
+          </p>
+        </div>
+      </div>
+
+      <input
+        class="enabled-button"
+        type="submit"
+        [value]="'subBtn' | translate"
+        [disabled]="!isFormValid"
+        [ngClass]="{ 'enabled-button': isFormValid }"
+      />
+    </form>
+  </div>
+</div>

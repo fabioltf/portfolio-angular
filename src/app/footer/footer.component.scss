@@ -1,0 +1,104 @@
+:host {
+  display: block;
+  background-color: var(--darkblue);
+
+  #footerDiv {
+    border-top: 3px solid var(--green);
+    height: 200px;
+
+    div {
+      line-height: 0.4;
+      #impressum {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        font-size: 14px;
+        cursor: pointer;
+      }
+
+      #impressum:hover {
+        text-decoration: underline;
+        text-decoration-color: var(--green);
+      }
+
+      #impressum:visited {
+        color: var(--purple);
+      }
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+  @media only screen and (min-width: 320px) {
+    #footerDiv {
+      flex-direction: column;
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 481px) {
+    #footerDiv {
+      flex-direction: column;
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    #footerDiv {
+      flex-direction: row;
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    #footerDiv {
+      flex-direction: row;
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    #footerDiv {
+      flex-direction: row;
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1400px) {
+    #footerDiv {
+      flex-direction: row;
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1600px) {
+    #footerDiv {
+      flex-direction: row;
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1900px) {
+    #footerDiv {
+      flex-direction: row;
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+}

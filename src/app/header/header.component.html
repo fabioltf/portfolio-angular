@@ -1,0 +1,28 @@
+<div id="logoNavDiv" class="flexContainerBetween">
+  <div id="logoDiv"><app-logo></app-logo></div>
+  <div id="navBar" class="flexContainer">
+    <img
+      (click)="toggleMenu()"
+      id="burgerIcon"
+      class="burgerIcon"
+      [src]="menuIconSrc"
+      alt="icon"
+    />
+    <div
+      id="navLinksDiv"
+      class="flexContainerEnd"
+      [ngClass]="{ open: isMenuOpen }"
+    >
+      <a href="#aboutPhotoDiv" (click)="closeMenu()">{{
+        "aboutMe" | translate
+      }}</a>
+      <a href="#mySkillsIconsDiv" (click)="closeMenu()">Skills</a>
+      <a href="#portfolioTitleDiv" (click)="closeMenu()">Portfolio</a>
+      <div id="languageSelect" class="flexContainer">
+        <span (click)="translateText('en')">EN</span>
+        <span>|</span>
+        <span (click)="translateText('de')">DE</span>
+      </div>
+    </div>
+  </div>
+</div>

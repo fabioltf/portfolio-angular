@@ -1,0 +1,37 @@
+<div id="portfolioTitleDiv" data-aos="zoom-in">
+  <div id="portfolioDiv" class="flexContainerEnd">
+    <hr id="firstChild" />
+
+    <h1 class="flexContainer">Portfolio</h1>
+
+    <hr id="lastChild" />
+  </div>
+  <p>
+    {{ "discover" | translate }}
+  </p>
+</div>
+
+<div id="projectsDiv" class="flexContainerCol">
+  @for (project of projectsData; track project.title) {
+  <div class="projectsDescriptionsDiv flexContainer">
+    <div class="projectImgs flexContainer" data-aos="fade-up">
+      <img src="/assets/img/{{ project.image }}" alt="project" />
+    </div>
+    <div class="projectDescriptions flexContainerCol" data-aos="fade-down">
+      <h3>{{ project.title }}</h3>
+      <h4>{{ project.tools }}</h4>
+      <p>
+        {{ project.description | translate }}
+      </p>
+      <div class="projectLinks flexContainer">
+        <a href="{{ project.liveLink }}" target="_blank">
+          <button class="live btns">Live Test</button></a
+        >
+        <a href="{{ project.gitLink }}" target="_blank">
+          <button class="git btns">Github</button>
+        </a>
+      </div>
+    </div>
+  </div>
+  }
+</div>

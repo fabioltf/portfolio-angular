@@ -1,0 +1,77 @@
+{
+  "iam": "Ich bin",
+  "frontend": "FRONTEND-ENTWICKLER",
+  "talk": "Lasst uns sprechen",
+  "scroll": "Scroll unten",
+  "aboutMe": "Über Mich",
+  "hi": "Hallo, ich bin ein deutschsprachiger Frontend-Entwickler aus der Nähe von Stuttgart. Motiviert von den grenzenlosen Möglichkeiten in der IT, begeistert es mich, visuell ansprechende und intuitive Webseiten und Anwendungen zu gestalten.",
+  "location": "Ich bin flexibel in Bezug auf Arbeitsumgebungen und kann sowohl vor Ort in Stuttgart als auch remote effektiv arbeiten.",
+  "idea": "Ich bin offen für neue Herausforderungen und ständig bestrebt, mein Wissen und meine Fähigkeiten zu erweitern.",
+  "puzzle": "In meinem Beruf geht es beim Programmieren nicht nur um das Schreiben von Code; es ist eine kreative Art, Probleme zu lösen. Ich bin stolz darauf, komplexe technische Herausforderungen in einfache, benutzerfreundliche Lösungen zu überführen. Auf diese Weise helfe ich Ihnen, Ihre Ziele zu erreichen und Ihre Visionen zum Leben zu erwecken.",
+  "experience": "Ich habe Erfahrung in der Entwicklung von Projekten mit verschiedenen Frontend-Technologien und -Konzepten gesammelt.",
+  "looking": "Suchen Sie nach",
+  "looking2": "weiteren Fähigkeit?",
+  "contactMe": "Zögern Sie nicht, mich zu kontaktieren. Ich freue mich darauf, mein bisheriges Wissen weiter auszubauen.",
+  "discover": "Entdecken Sie hier eine Auswahl meiner Arbeiten – Interagieren Sie mit den Projekten, um meine Fähigkeiten in Aktion zu sehen.",
+  "projectDes": {
+    "join": "Ein Task-Manager, inspiriert vom Kanban-System. Aufgaben können Benutzern zugewiesen werden und per Drag-and-Drop in Kategorien wie 'In Bearbeitung' oder 'Abgeschlossen' verschoben werden. Die Daten der Benutzer und der Aufgaben wurden von der Firebase-Datenbank geladen sowie geschrieben.",
+    "elpolloloco": "Ein Jump-, Run- und Wurfspiel, das auf einem objektorientierten Ansatz implementiert wurde. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.",
+    "pokemon": "Basierend auf der PokéAPI, eine einfache Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert."
+  },
+  "portfolio": "Ein Projekt, das mit Angular-Komponenten, SCSS und TypeScript erstellt wurde.",
+  "lieferando": "Eine Bestellanwendung mit Funktionen für den Warenkorb wie in der Lieferando-App.",
+  "instagram": "Das Frontend von einer wie Instagram Anwendung mit den Daten einer JSON-Datei und Javascript-Template implementiert. Ich habe KI-Tools verwendet, um die JSON-Datei zu erstellen, als auch Bilder und Fotos zu generieren.",
+  "references": {
+    "tai": "Die Zusammenarbeit mit Fabio war durchweg positiv. Er bringt eine freundliche und unterstützende Atmosphäre ins Team, die es uns ermöglicht, unsere beste Leistung zu erbringen. Auch unter Druck bleibt Fabion ruhig und konzentriert und ist immer bereit, anderen zu helfen. Seine Fähigkeit, Probleme zu analysieren und kreative Lösungen zu finden, hat mich oft beeindruckt. Durch seine strukturierte Herangehensweise und Zuverlässigkeit hat er wesentlich zum Erfolg unserer Projekte beigetragen. Fabion ist ein Teamplayer, der sauberen, wiederverwendbaren Code schreibt und einen starken, designorientierten Ansatz verfolgt.",
+    "phil": "Fabio beeindruckte durch seine Fähigkeit, kreative und gut strukturierte Lösungen zu entwickeln und selbst die anspruchsvollsten Aufgaben mit Leichtigkeit zu bewältigen. Sein professionelles, fokussiertes und organisiertes Vorgehen machte ihn zu einer wertvollen Bereicherung für das Team. Besonders schätzte ich seine ruhige Art und seine durchdachten Problemlösungsfähigkeiten, die dazu beitrugen, auch in herausfordernden Situationen reibungslos voranzukommen. Fabions Sinn für Humor trug zudem zu einer positiven Teamatmosphäre bei, die Zusammenarbeit und Motivation förderte. Ich empfehle Fabion wärmstens weiter.",
+    "heiko": "Fabions schnelle und zuverlässige Umsetzung auch komplexer Aufgaben in den Bereichen HTML, CSS und JavaScript war beeindruckend und von unschätzbarem Wert für das Projekt. Sein technisches Know-How und seine präzise und effiziente Arbeitsweise haben maßgeblich zum Erfolg des Teams beigetragen. Zudem hat Fabion eine sehr freundliche Art, wodurch das Zusammenarbeiten mit ihm sehr viel Spaß gemacht hat.",
+    "marv": "Fabion hat sich im Bereich Programmierung als äußerst kompetenter und engagierter Projekt Kollege bewiesen. Besonders seine schnelle Auffassungsgabe und seine Fähigkeit, kreative und effiziente Lösungen zu finden, haben beeindruckt. Er war stets hilfsbereit und konnte auch bei anspruchsvollen Aufgaben schnell und zielorientiert unterstützen. Zudem hat Fabion durch sein außerordentliches Engagement dazu beigetragen, dass unsere Projekte erfolgreich und termingerecht abgeschlossen wurden. Seine lösungsorientierte Arbeitsweise und sein Teamgeist waren dabei von großem Wert."
+  },
+  "contact": "Kontact",
+  "needDev": "Frontend-Entwickler gesucht",
+  "contactMeForm": "Kontaktieren Sie mich über dieses Formular. Ich bin daran interessiert, von Ihnen zu hören, Ihre Ideen kennenzulernen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
+  "placeholderName": "Ihr vollständiger Name",
+  "placeholderEmail": "Ihre E-Mail",
+  "placeholderMsg": "Ihre Nachricht",
+  "nameReq": "Vollständiger Name ist erforderlich",
+  "emailReq": "E-Mail ist erforderlich",
+  "msgReq": "Nachricht ist erforderlich",
+  "policy1": "Ich habe die",
+  "policy2": "Datenschutzrichtlinie",
+  "policy3": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
+  "subBtn": "Nachricht senden :)",
+  "legNotice": "Impressum",
+  "germanLaw": "Informationen gemäß §5 TMG",
+  "infoWeCollect": {
+    "title": "1. Informationen, die wir sammeln",
+    "content": "Wir sammeln nur persönliche Informationen, die Sie uns freiwillig über unser Kontaktformular zur Verfügung stellen, wie z. B. Ihren Namen und Ihre E-Mail-Adresse."
+  },
+  "useOfInfo": {
+    "title": "2. Verwendung Ihrer Informationen",
+    "content": "Die Informationen, die Sie bereitstellen, werden nur verwendet, um auf Ihre Anfragen zu antworten oder Ihnen die angeforderten Informationen bereitzustellen. Wir verwenden Ihre Informationen nicht für Marketingzwecke."
+  },
+  "cookies": {
+    "title": "3. Cookies",
+    "content": "Unsere Website verwendet keine Cookies oder ähnliche Tracking-Technologien. Wir verfolgen Ihre Aktivitäten auf unserer Website nicht und sammeln keine Informationen über Ihr Surfverhalten."
+  },
+  "noUserRegistration": {
+    "title": "4. Keine Benutzerregistrierung",
+    "content": "Unsere Website ist eine statische Portfolio-Website und erlaubt keine Benutzerregistrierung. Daher speichern wir keine Benutzerkontoinformationen."
+  },
+  "dataSecurity": {
+    "title": "5. Datensicherheit",
+    "content": "Wir ergreifen angemessene Maßnahmen, um Ihre persönlichen Informationen vor unbefugtem Zugriff, Offenlegung, Veränderung oder Zerstörung zu schützen."
+  },
+  "thirdPartyLinks": {
+    "title": "6. Links zu Drittanbietern",
+    "content": "Unsere Website kann Links zu Drittanbieter-Websites enthalten. Wir sind nicht verantwortlich für die Datenschutzpraktiken oder den Inhalt dieser Seiten."
+  },
+  "changesToPolicy": {
+    "title": "7. Änderungen dieser Datenschutzrichtlinie",
+    "content": "Wir können diese Datenschutzrichtlinie von Zeit zu Zeit aktualisieren. Wir werden Sie über Änderungen informieren, indem wir die neue Richtlinie auf dieser Seite veröffentlichen."
+  },
+  "contactUs": {
+    "title": "8. Kontaktieren Sie uns",
+    "content": "Wenn Sie Fragen oder Bedenken zu dieser Datenschutzrichtlinie haben, kontaktieren Sie uns bitte über das Kontaktformular auf unserer Website."
+  }
+}

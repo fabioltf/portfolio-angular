@@ -1,0 +1,759 @@
+:host {
+  #mySkillsIconsDiv {
+    #skillsIconsDiv {
+      .skillIconDiv {
+        #continually {
+          color: var(--purple);
+        }
+      }
+    }
+  }
+
+  #mySkillsDiv {
+    h3 {
+      text-align: center;
+    }
+  }
+
+  @media only screen and (min-width: 320px) {
+    #mySkillsIconsDiv {
+      overflow: hidden;
+      position: relative;
+      padding-top: 200px;
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 20px;
+
+      #skillsIconsDiv {
+        gap: 40px;
+        width: 90%;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .skillIconDiv {
+          gap: 8px;
+          flex-basis: 0;
+
+          @keyframes bounce {
+            0%,
+            100%,
+            20%,
+            50%,
+            80% {
+              -webkit-transform: translateY(0);
+              -ms-transform: translateY(0);
+              transform: translateY(0);
+            }
+            40% {
+              -webkit-transform: translateY(-30px);
+              -ms-transform: translateY(-30px);
+              transform: translateY(-30px);
+            }
+            60% {
+              -webkit-transform: translateY(-15px);
+              -ms-transform: translateY(-15px);
+              transform: translateY(-15px);
+            }
+          }
+
+          img {
+            width: 60px;
+            cursor: pointer;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            -webkit-animation-iteration-count: infinite;
+          }
+          :hover {
+            animation-name: bounce;
+            -moz-animation-name: bounce;
+          }
+
+          h4 {
+            font-size: 16px;
+            line-height: 1.2;
+            text-align: center;
+            width: 120px;
+          }
+        }
+      }
+
+      #mySkillsDiv {
+        padding: 0;
+        gap: 20px;
+        width: 100%;
+        div {
+          width: 100%;
+          gap: 30px;
+          h1 {
+            font-size: 40px;
+          }
+
+          hr {
+            border: 2px solid var(--purple);
+            width: 100px;
+          }
+        }
+        p {
+          width: 90%;
+        }
+
+        h3 {
+          font-size: 26px;
+          span {
+            color: var(--purple);
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 481px) {
+    #mySkillsIconsDiv {
+      overflow: hidden;
+      position: relative;
+      padding-top: 200px;
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 20px;
+
+      #skillsIconsDiv {
+        gap: 40px;
+        width: 90%;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .skillIconDiv {
+          gap: 8px;
+          flex-basis: 0;
+
+          @keyframes bounce {
+            0%,
+            100%,
+            20%,
+            50%,
+            80% {
+              -webkit-transform: translateY(0);
+              -ms-transform: translateY(0);
+              transform: translateY(0);
+            }
+            40% {
+              -webkit-transform: translateY(-30px);
+              -ms-transform: translateY(-30px);
+              transform: translateY(-30px);
+            }
+            60% {
+              -webkit-transform: translateY(-15px);
+              -ms-transform: translateY(-15px);
+              transform: translateY(-15px);
+            }
+          }
+
+          img {
+            width: 60px;
+            cursor: pointer;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            -webkit-animation-iteration-count: infinite;
+          }
+          :hover {
+            animation-name: bounce;
+            -moz-animation-name: bounce;
+          }
+
+          h4 {
+            font-size: 16px;
+            line-height: 1.2;
+            text-align: center;
+            width: 120px;
+          }
+        }
+      }
+
+      #mySkillsDiv {
+        padding: 0;
+        gap: 20px;
+        width: 100%;
+        div {
+          width: 100%;
+          gap: 30px;
+          h1 {
+            font-size: 50px;
+          }
+
+          hr {
+            border: 2px solid var(--purple);
+            width: 100px;
+          }
+        }
+        p {
+          width: 90%;
+        }
+
+        h3 {
+          font-size: 26px;
+          span {
+            color: var(--purple);
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    #mySkillsIconsDiv {
+      overflow: hidden;
+      position: relative;
+      padding-top: 200px;
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 20px;
+
+      #skillsIconsDiv {
+        gap: 40px;
+        width: 90%;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .skillIconDiv {
+          gap: 8px;
+          flex-basis: 0;
+
+          @keyframes bounce {
+            0%,
+            100%,
+            20%,
+            50%,
+            80% {
+              -webkit-transform: translateY(0);
+              -ms-transform: translateY(0);
+              transform: translateY(0);
+            }
+            40% {
+              -webkit-transform: translateY(-30px);
+              -ms-transform: translateY(-30px);
+              transform: translateY(-30px);
+            }
+            60% {
+              -webkit-transform: translateY(-15px);
+              -ms-transform: translateY(-15px);
+              transform: translateY(-15px);
+            }
+          }
+
+          img {
+            width: 60px;
+            cursor: pointer;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            -webkit-animation-iteration-count: infinite;
+          }
+          :hover {
+            animation-name: bounce;
+            -moz-animation-name: bounce;
+          }
+
+          h4 {
+            font-size: 16px;
+            line-height: 1.2;
+            text-align: center;
+            width: 120px;
+          }
+        }
+      }
+
+      #mySkillsDiv {
+        padding: 0;
+        gap: 20px;
+        width: 100%;
+        div {
+          width: 100%;
+          gap: 30px;
+          h1 {
+            font-size: 60px;
+          }
+
+          hr {
+            border: 2px solid var(--purple);
+            width: 100px;
+          }
+        }
+        p {
+          width: 90%;
+        }
+
+        h3 {
+          font-size: 26px;
+          span {
+            color: var(--purple);
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    #mySkillsIconsDiv {
+      overflow: hidden;
+      position: relative;
+      padding-top: 200px;
+      flex-direction: row;
+      align-items: flex-start;
+
+      #skillsIconsDiv {
+        gap: 40px;
+        width: 46%;
+        flex-wrap: wrap;
+
+        .skillIconDiv {
+          gap: 8px;
+          flex-basis: 0;
+
+          @keyframes bounce {
+            0%,
+            100%,
+            20%,
+            50%,
+            80% {
+              -webkit-transform: translateY(0);
+              -ms-transform: translateY(0);
+              transform: translateY(0);
+            }
+            40% {
+              -webkit-transform: translateY(-30px);
+              -ms-transform: translateY(-30px);
+              transform: translateY(-30px);
+            }
+            60% {
+              -webkit-transform: translateY(-15px);
+              -ms-transform: translateY(-15px);
+              transform: translateY(-15px);
+            }
+          }
+
+          img {
+            width: 60px;
+            cursor: pointer;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            -webkit-animation-iteration-count: infinite;
+          }
+          :hover {
+            animation-name: bounce;
+            -moz-animation-name: bounce;
+          }
+
+          h4 {
+            font-size: 16px;
+            line-height: 1.2;
+            text-align: center;
+            width: 120px;
+          }
+        }
+      }
+
+      #mySkillsDiv {
+        padding-left: 100px;
+        gap: 20px;
+        width: 30%;
+        div {
+          width: 100%;
+          gap: 30px;
+          h1 {
+            font-size: 70px;
+          }
+          hr {
+            border: 2px solid var(--purple);
+            width: 100px;
+          }
+        }
+
+        h3 {
+          font-size: 26px;
+          span {
+            color: var(--purple);
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    #mySkillsIconsDiv {
+      overflow: hidden;
+      position: relative;
+      padding-top: 200px;
+      align-items: flex-start;
+
+      #skillsIconsDiv {
+        gap: 40px;
+        width: 46%;
+        flex-wrap: wrap;
+
+        .skillIconDiv {
+          gap: 8px;
+          flex-basis: 0;
+
+          @keyframes bounce {
+            0%,
+            100%,
+            20%,
+            50%,
+            80% {
+              -webkit-transform: translateY(0);
+              -ms-transform: translateY(0);
+              transform: translateY(0);
+            }
+            40% {
+              -webkit-transform: translateY(-30px);
+              -ms-transform: translateY(-30px);
+              transform: translateY(-30px);
+            }
+            60% {
+              -webkit-transform: translateY(-15px);
+              -ms-transform: translateY(-15px);
+              transform: translateY(-15px);
+            }
+          }
+
+          img {
+            width: 60px;
+            cursor: pointer;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            -webkit-animation-iteration-count: infinite;
+          }
+          :hover {
+            animation-name: bounce;
+            -moz-animation-name: bounce;
+          }
+
+          h4 {
+            font-size: 16px;
+            line-height: 1.2;
+            text-align: center;
+            width: 120px;
+          }
+        }
+      }
+
+      #mySkillsDiv {
+        padding-left: 100px;
+        gap: 20px;
+        width: 30%;
+        div {
+          width: 100%;
+          gap: 30px;
+          h1 {
+            font-size: 74px;
+          }
+          hr {
+            border: 2px solid var(--purple);
+            width: 100px;
+          }
+        }
+
+        h3 {
+          font-size: 26px;
+          span {
+            color: var(--purple);
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1400px) {
+    #mySkillsIconsDiv {
+      overflow: hidden;
+      position: relative;
+      padding-top: 200px;
+      align-items: flex-start;
+
+      #skillsIconsDiv {
+        gap: 80px;
+        width: 46%;
+        flex-wrap: wrap;
+
+        .skillIconDiv {
+          gap: 8px;
+          flex-basis: 0;
+
+          @keyframes bounce {
+            0%,
+            100%,
+            20%,
+            50%,
+            80% {
+              -webkit-transform: translateY(0);
+              -ms-transform: translateY(0);
+              transform: translateY(0);
+            }
+            40% {
+              -webkit-transform: translateY(-30px);
+              -ms-transform: translateY(-30px);
+              transform: translateY(-30px);
+            }
+            60% {
+              -webkit-transform: translateY(-15px);
+              -ms-transform: translateY(-15px);
+              transform: translateY(-15px);
+            }
+          }
+
+          img {
+            width: 60px;
+            cursor: pointer;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            -webkit-animation-iteration-count: infinite;
+          }
+          :hover {
+            animation-name: bounce;
+            -moz-animation-name: bounce;
+          }
+
+          h4 {
+            font-size: 16px;
+            line-height: 1.2;
+            text-align: center;
+            width: 120px;
+          }
+        }
+      }
+
+      #mySkillsDiv {
+        padding-left: 200px;
+        gap: 20px;
+        width: 30%;
+        div {
+          width: 100%;
+          gap: 30px;
+          h1 {
+            font-size: 90px;
+          }
+          hr {
+            border: 2px solid var(--purple);
+            width: 100px;
+          }
+        }
+
+        h3 {
+          font-size: 26px;
+          span {
+            color: var(--purple);
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1600px) {
+    #mySkillsIconsDiv {
+      overflow: hidden;
+      position: relative;
+      padding-top: 200px;
+      align-items: flex-start;
+
+      #skillsIconsDiv {
+        gap: 80px;
+        width: 46%;
+        flex-wrap: wrap;
+
+        .skillIconDiv {
+          gap: 8px;
+          flex-basis: 0;
+
+          @keyframes bounce {
+            0%,
+            100%,
+            20%,
+            50%,
+            80% {
+              -webkit-transform: translateY(0);
+              -ms-transform: translateY(0);
+              transform: translateY(0);
+            }
+            40% {
+              -webkit-transform: translateY(-30px);
+              -ms-transform: translateY(-30px);
+              transform: translateY(-30px);
+            }
+            60% {
+              -webkit-transform: translateY(-15px);
+              -ms-transform: translateY(-15px);
+              transform: translateY(-15px);
+            }
+          }
+
+          img {
+            width: 60px;
+            cursor: pointer;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            -webkit-animation-iteration-count: infinite;
+          }
+          :hover {
+            animation-name: bounce;
+            -moz-animation-name: bounce;
+          }
+
+          h4 {
+            font-size: 16px;
+            line-height: 1.2;
+            text-align: center;
+            width: 120px;
+          }
+        }
+      }
+
+      #mySkillsDiv {
+        padding-left: 200px;
+        gap: 20px;
+        width: 30%;
+        div {
+          width: 100%;
+          gap: 30px;
+          h1 {
+            font-size: 90px;
+          }
+          hr {
+            border: 2px solid var(--purple);
+            width: 100px;
+          }
+        }
+
+        h3 {
+          font-size: 26px;
+          span {
+            color: var(--purple);
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1900px) {
+    #mySkillsIconsDiv {
+      overflow: hidden;
+      position: relative;
+      padding-top: 200px;
+      align-items: flex-start;
+
+      #skillsIconsDiv {
+        gap: 80px;
+        width: 46%;
+        flex-wrap: wrap;
+
+        .skillIconDiv {
+          gap: 8px;
+          flex-basis: 0;
+
+          @keyframes bounce {
+            0%,
+            100%,
+            20%,
+            50%,
+            80% {
+              -webkit-transform: translateY(0);
+              -ms-transform: translateY(0);
+              transform: translateY(0);
+            }
+            40% {
+              -webkit-transform: translateY(-30px);
+              -ms-transform: translateY(-30px);
+              transform: translateY(-30px);
+            }
+            60% {
+              -webkit-transform: translateY(-15px);
+              -ms-transform: translateY(-15px);
+              transform: translateY(-15px);
+            }
+          }
+
+          img {
+            width: 60px;
+            cursor: pointer;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            -webkit-animation-iteration-count: infinite;
+          }
+          :hover {
+            animation-name: bounce;
+            -moz-animation-name: bounce;
+          }
+
+          h4 {
+            font-size: 16px;
+            line-height: 1.2;
+            text-align: center;
+            width: 120px;
+          }
+        }
+      }
+
+      #mySkillsDiv {
+        padding-left: 200px;
+        gap: 20px;
+        width: 30%;
+        div {
+          width: 100%;
+          gap: 30px;
+          h1 {
+            font-size: 90px;
+          }
+          hr {
+            border: 2px solid var(--purple);
+            width: 100px;
+          }
+        }
+
+        h3 {
+          font-size: 26px;
+          span {
+            color: var(--purple);
+          }
+        }
+      }
+    }
+  }
+}

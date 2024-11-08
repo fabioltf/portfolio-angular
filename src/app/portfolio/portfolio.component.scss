@@ -1,0 +1,672 @@
+:host {
+  #portfolioTitleDiv {
+    overflow: hidden;
+    padding-top: 200px;
+    padding-bottom: 80px;
+    #portfolioDiv {
+      gap: 30px;
+
+      #firstChild {
+        border: 2px solid var(--purple);
+        width: 6%;
+      }
+
+      h1 {
+        width: 20%;
+        font-size: 90px;
+      }
+
+      #lastChild {
+        border: 2px solid var(--purple);
+        width: 36%;
+      }
+    }
+    p {
+      text-align: center;
+    }
+  }
+
+  #projectsDiv {
+    gap: 120px;
+    .projectsDescriptionsDiv {
+      width: 100%;
+      gap: 40px;
+      height: 300px;
+      .projectImgs {
+        width: 50%;
+        img {
+          width: 500px;
+          transition: transform 0.3s ease;
+        }
+      }
+
+      .projectDescriptions {
+        align-items: flex-start;
+        width: 50%;
+        gap: 14px;
+        h3 {
+          font-size: 42px;
+          color: var(--purple);
+        }
+
+        h4 {
+          font-size: 24px;
+          color: var(--green);
+        }
+
+        .projectLinks {
+          gap: 30px;
+          /*button {
+            cursor: pointer;
+            padding: 12px 24px;
+            border-radius: 12px;
+            a {
+              text-decoration: none;
+              color: #fff;
+              font-size: 16px;
+            }
+
+            a:visited,
+            a:focus,
+            a:active {
+              color: #fff;
+            }
+          }*/
+
+          a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+
+            button {
+              cursor: pointer;
+              padding: 12px 24px;
+              border-radius: 12px;
+              color: #fff;
+            }
+          }
+
+          a:visited,
+          a:focus,
+          a:active {
+            color: #fff;
+          }
+
+          .live {
+            background-color: var(--purple);
+            border: 1px solid var(--purple);
+          }
+          .live:hover {
+            background-color: var(--green);
+            border: 1px solid var(--green);
+          }
+
+          .git {
+            background-color: transparent;
+            border: 1px solid var(--green);
+          }
+          .git:hover {
+            background-color: var(--green);
+            border: 1px solid var(--green);
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 320px) {
+    #portfolioTitleDiv {
+      overflow: hidden;
+      padding-top: 200px;
+      padding-bottom: 0;
+      #portfolioDiv {
+        gap: 60px;
+
+        #firstChild {
+          border: 2px solid var(--purple);
+          width: 6%;
+        }
+
+        h1 {
+          font-size: 40px;
+        }
+
+        #lastChild {
+          border: 2px solid var(--purple);
+          width: 20%;
+        }
+      }
+      p {
+        text-align: center;
+      }
+    }
+
+    #projectsDiv {
+      gap: 30px;
+      .projectsDescriptionsDiv {
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        height: auto;
+        .projectImgs {
+          width: 90%;
+          img {
+            justify-content: center;
+            width: 320px;
+            transition: transform 0.3s ease;
+          }
+        }
+
+        .projectDescriptions {
+          align-items: flex-start;
+          justify-content: center;
+          width: 90%;
+          gap: 14px;
+          h3 {
+            font-size: 30px;
+            color: var(--purple);
+          }
+
+          h4 {
+            font-size: 20px;
+            color: var(--green);
+          }
+
+          .projectLinks {
+            gap: 30px;
+            button {
+              cursor: pointer;
+              padding: 12px 24px;
+              border-radius: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 481px) {
+    #portfolioTitleDiv {
+      overflow: hidden;
+      padding-top: 200px;
+      padding-bottom: 0;
+      #portfolioDiv {
+        gap: 60px;
+
+        #firstChild {
+          border: 2px solid var(--purple);
+          width: 6%;
+        }
+
+        h1 {
+          font-size: 50px;
+        }
+
+        #lastChild {
+          border: 2px solid var(--purple);
+          width: 20%;
+        }
+      }
+      p {
+        text-align: center;
+      }
+    }
+
+    #projectsDiv {
+      gap: 30px;
+      .projectsDescriptionsDiv {
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        height: auto;
+        .projectImgs {
+          width: 90%;
+          justify-content: center;
+          img {
+            width: 360px;
+            transition: transform 0.3s ease;
+          }
+        }
+
+        .projectDescriptions {
+          align-items: flex-start;
+          justify-content: center;
+          width: 90%;
+
+          gap: 14px;
+          h3 {
+            font-size: 30px;
+            color: var(--purple);
+          }
+
+          h4 {
+            font-size: 20px;
+            color: var(--green);
+          }
+
+          .projectLinks {
+            gap: 30px;
+            button {
+              cursor: pointer;
+              padding: 12px 24px;
+              border-radius: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    #portfolioTitleDiv {
+      overflow: hidden;
+      padding-top: 200px;
+      padding-bottom: 80px;
+      #portfolioDiv {
+        gap: 50px;
+
+        #firstChild {
+          border: 2px solid var(--purple);
+          width: 6%;
+        }
+
+        h1 {
+          font-size: 60px;
+        }
+
+        #lastChild {
+          border: 2px solid var(--purple);
+          width: 32%;
+        }
+      }
+      p {
+        text-align: center;
+      }
+    }
+
+    #projectsDiv {
+      gap: 120px;
+      .projectsDescriptionsDiv {
+        width: 90%;
+        flex-direction: row;
+        justify-content: center;
+        gap: 40px;
+        height: 300px;
+        .projectImgs {
+          width: 50%;
+          img {
+            width: 360px;
+            transition: transform 0.3s ease;
+          }
+        }
+
+        .projectDescriptions {
+          align-items: flex-start;
+          width: 50%;
+          gap: 14px;
+          h3 {
+            font-size: 30px;
+            color: var(--purple);
+          }
+
+          h4 {
+            font-size: 20px;
+            color: var(--green);
+          }
+
+          .projectLinks {
+            gap: 30px;
+            button {
+              cursor: pointer;
+              padding: 12px 24px;
+              border-radius: 12px;
+            }
+          }
+        }
+      }
+
+      .projectsDescriptionsDiv:nth-child(even) {
+        flex-direction: row-reverse;
+
+        .projectDescriptions {
+          align-items: flex-end;
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    #portfolioTitleDiv {
+      overflow: hidden;
+      padding-top: 200px;
+      padding-bottom: 80px;
+      #portfolioDiv {
+        gap: 50px;
+
+        #firstChild {
+          border: 2px solid var(--purple);
+          width: 6%;
+        }
+
+        h1 {
+          font-size: 70px;
+        }
+
+        #lastChild {
+          border: 2px solid var(--purple);
+          width: 32%;
+        }
+      }
+      p {
+        text-align: center;
+      }
+    }
+
+    #projectsDiv {
+      gap: 120px;
+      .projectsDescriptionsDiv {
+        gap: 40px;
+        height: 300px;
+        .projectImgs {
+          width: 50%;
+          img {
+            width: 360px;
+            transition: transform 0.3s ease;
+          }
+        }
+
+        .projectDescriptions {
+          align-items: flex-start;
+          width: 50%;
+          gap: 14px;
+          h3 {
+            font-size: 30px;
+            color: var(--purple);
+          }
+
+          h4 {
+            font-size: 20px;
+            color: var(--green);
+          }
+
+          .projectLinks {
+            gap: 30px;
+            button {
+              cursor: pointer;
+              padding: 12px 24px;
+              border-radius: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    #portfolioTitleDiv {
+      overflow: hidden;
+      padding-top: 200px;
+      padding-bottom: 80px;
+      #portfolioDiv {
+        gap: 40px;
+
+        #firstChild {
+          border: 2px solid var(--purple);
+          width: 6%;
+        }
+
+        h1 {
+          font-size: 74px;
+        }
+
+        #lastChild {
+          border: 2px solid var(--purple);
+          width: 36%;
+        }
+      }
+      p {
+        text-align: center;
+      }
+    }
+
+    #projectsDiv {
+      gap: 120px;
+      .projectsDescriptionsDiv {
+        gap: 40px;
+        height: 300px;
+        .projectImgs {
+          width: 50%;
+          img {
+            width: 500px;
+            transition: transform 0.3s ease;
+          }
+        }
+
+        .projectDescriptions {
+          align-items: flex-start;
+          width: 50%;
+          gap: 14px;
+          h3 {
+            font-size: 42px;
+            color: var(--purple);
+          }
+
+          h4 {
+            font-size: 24px;
+            color: var(--green);
+          }
+
+          .projectLinks {
+            gap: 30px;
+            button {
+              cursor: pointer;
+              padding: 12px 24px;
+              border-radius: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1400px) {
+    #portfolioTitleDiv {
+      overflow: hidden;
+      padding-top: 200px;
+      padding-bottom: 80px;
+      #portfolioDiv {
+        gap: 50px;
+
+        #firstChild {
+          border: 2px solid var(--purple);
+          width: 6%;
+        }
+
+        h1 {
+          font-size: 90px;
+        }
+
+        #lastChild {
+          border: 2px solid var(--purple);
+          width: 36%;
+        }
+      }
+      p {
+        text-align: center;
+      }
+    }
+
+    #projectsDiv {
+      gap: 120px;
+      .projectsDescriptionsDiv {
+        gap: 40px;
+        height: 300px;
+        .projectImgs {
+          width: 50%;
+          img {
+            width: 500px;
+            transition: transform 0.3s ease;
+          }
+        }
+
+        .projectDescriptions {
+          align-items: flex-start;
+          width: 50%;
+          gap: 14px;
+          h3 {
+            font-size: 42px;
+            color: var(--purple);
+          }
+
+          h4 {
+            font-size: 24px;
+            color: var(--green);
+          }
+
+          .projectLinks {
+            gap: 30px;
+            button {
+              cursor: pointer;
+              padding: 12px 24px;
+              border-radius: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1600px) {
+    #portfolioTitleDiv {
+      overflow: hidden;
+      padding-top: 200px;
+      padding-bottom: 80px;
+      #portfolioDiv {
+        gap: 40px;
+
+        #firstChild {
+          border: 2px solid var(--purple);
+          width: 6%;
+        }
+
+        h1 {
+          font-size: 90px;
+        }
+
+        #lastChild {
+          border: 2px solid var(--purple);
+          width: 36%;
+        }
+      }
+      p {
+        text-align: center;
+      }
+    }
+
+    #projectsDiv {
+      gap: 120px;
+      .projectsDescriptionsDiv {
+        gap: 40px;
+        height: 300px;
+        .projectImgs {
+          width: 50%;
+          img {
+            width: 500px;
+            transition: transform 0.3s ease;
+          }
+        }
+
+        .projectDescriptions {
+          align-items: flex-start;
+          width: 50%;
+          gap: 14px;
+          h3 {
+            font-size: 42px;
+            color: var(--purple);
+          }
+
+          h4 {
+            font-size: 24px;
+            color: var(--green);
+          }
+
+          .projectLinks {
+            gap: 30px;
+            button {
+              cursor: pointer;
+              padding: 12px 24px;
+              border-radius: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1900px) {
+    #portfolioTitleDiv {
+      overflow: hidden;
+      padding-top: 200px;
+      padding-bottom: 80px;
+      #portfolioDiv {
+        gap: 40px;
+
+        #firstChild {
+          border: 2px solid var(--purple);
+          width: 6%;
+        }
+
+        h1 {
+          font-size: 90px;
+        }
+
+        #lastChild {
+          border: 2px solid var(--purple);
+          width: 36%;
+        }
+      }
+      p {
+        text-align: center;
+      }
+    }
+
+    #projectsDiv {
+      gap: 120px;
+      .projectsDescriptionsDiv {
+        gap: 40px;
+        height: 300px;
+        .projectImgs {
+          width: 50%;
+          img {
+            width: 500px;
+            transition: transform 0.3s ease;
+          }
+        }
+
+        .projectDescriptions {
+          align-items: flex-start;
+          width: 50%;
+          gap: 14px;
+          h3 {
+            font-size: 42px;
+            color: var(--purple);
+          }
+
+          h4 {
+            font-size: 24px;
+            color: var(--green);
+          }
+
+          .projectLinks {
+            gap: 30px;
+            button {
+              cursor: pointer;
+              padding: 12px 24px;
+              border-radius: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,86 @@
+<div id="heroDiv" class="flexContainerColEnd">
+  <div id="photoJobDiv" class="flexContainerStart">
+    <div id="photoDiv">
+      <img
+        id="me1"
+        data-aos="slide-right"
+        src="/assets/img/me1.png"
+        alt="photo"
+      />
+    </div>
+    <div id="heroTextBtnDiv" class="flexContainerCol">
+      <div id="heroTextDiv" class="flexContainer">
+        <div id="iamDiv" class="flexContainerStart">
+          <h2 class="iam" data-aos="fade">{{ "iam" | translate }}</h2>
+        </div>
+        <div id="nameJobText" class="flexContainerColStart">
+          <h1 id="name" data-aos="zoom-in">Fabion Latifi</h1>
+          <h2 id="job" data-aos="slide-left">{{ "frontend" | translate }}</h2>
+        </div>
+      </div>
+      <div id="btnDiv" class="flexContainer">
+        <button id="talkBtn">
+          <a href="#hrLineContactDiv"> {{ "talk" | translate }} </a>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="hrSocialScrollDiv" class="flexContainerBetween">
+    <div id="hrSocialDiv" class="flexContainerStart">
+      <hr />
+      <app-socialicons></app-socialicons>
+      <a id="emailLink" href="#hrLineContactDiv">fabioltf&#64;gmail.com</a>
+    </div>
+
+    <p id="scroll">
+      {{ "scroll" | translate }}
+      <img id="me1" src="/assets/img/arrow-down.svg" alt="arrow icon" />
+    </p>
+  </div>
+</div>
+
+<svg
+  id="borderedBackground"
+  data-name="borderedBackground"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#radial-gradient);
+      }
+    </style>
+    <radialGradient
+      id="radial-gradient"
+      cx="1.72"
+      cy="1247"
+      r="1"
+      gradientTransform="matrix(240.32, 689.58, 2954.83, -158.46, -3683744.1, 196444.03)"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop offset="0" stop-color="#1a2743" />
+      <stop offset="0.14" stop-color="#27334b" />
+      <stop offset="0.72" stop-color="#141d2f" />
+    </radialGradient>
+  </defs>
+  <path
+    class="cls-1"
+    d="M2882,0V558.51q-72.55,14-148.5,27.37c-386.73,68-847.21,126.14-1368.65,172.47C809.24,807.74,304,833.38,4,845.61L0,330.45c471.67,15.68,706.31,10.09,1138.21-28.61C1966.64,227.59,2561.62,119.24,2882,0Z"
+  />
+</svg>
+
+<div id="arrowDiv" class="flexContainerEnd">
+  <img
+    (click)="scrollToTop()"
+    class="arrowUp scrollToTop"
+    [class.show]="isVisible"
+    (mouseenter)="changeImage('hover')"
+    (mouseleave)="changeImage('default')"
+    [src]="currentImage"
+    alt="arrow icon"
+  />
+  <link rel="preload" href="/assets/img/arrow-up.svg" as="image" />
+  <link rel="preload" href="/assets/img/arrow-up-hover.svg" as="image" />
+</div>

@@ -1,0 +1,514 @@
+:host {
+  position: relative;
+  #hrLineContactDiv {
+    padding-top: 140px;
+    gap: 30px;
+    hr {
+      border: 2px solid var(--purple);
+      width: 36%;
+    }
+
+    h1 {
+      font-size: 90px;
+    }
+  }
+
+  #incitementContactDiv {
+    padding-top: 40px;
+    padding-bottom: 120px;
+    align-items: flex-start;
+    #incitement {
+      width: 30%;
+      align-items: flex-start;
+      h1 {
+      }
+      p {
+      }
+    }
+  }
+
+  #contactForm {
+    width: 34%;
+    form {
+      align-items: flex-start;
+      gap: 20px;
+
+      #fullnameDiv,
+      #emailDiv,
+      #messageDiv {
+        width: 100%;
+        position: relative;
+        gap: 4px;
+        #errorName,
+        #errorEmail,
+        #errorMsg {
+          width: 100%;
+          color: #e61c40;
+          font-size: 14px;
+        }
+      }
+
+      /*
+      #fullnameDiv::after,
+      #emailDiv::after,
+      #messageDiv::after {
+        content: url("/assets/img/greenTick.svg");
+        transform: scale(0.8);
+        position: absolute;
+        top: 6px;
+        right: 10px;
+      }
+
+      #fullnameDiv::after,
+      #emailDiv::after,
+      #messageDiv::after {
+        content: url("/assets/img/redWarn.svg");
+        transform: scale(0.8);
+        position: absolute;
+        top: 6px;
+        right: 10px;
+      }
+
+      */
+
+      .warning,
+      .passed {
+        position: relative;
+      }
+
+      /* Style for warning state */
+      .warning::after {
+        content: url("/assets/img/redWarn.svg"); /* Assuming warning icon for `warning` class */
+        transform: scale(0.8);
+        position: absolute;
+        top: 6px;
+        right: 10px;
+      }
+
+      /* Style for passed (validated) state */
+      .passed::after {
+        content: url("/assets/img/greenTick.svg");
+        transform: scale(0.8);
+        position: absolute;
+        top: 6px;
+        right: 10px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        position: relative;
+        width: 100%;
+        padding: 12px 0;
+        text-indent: 10px;
+        font-size: 16px;
+        outline: none;
+        background-color: transparent;
+        color: #fff;
+        border: 2px solid var(--purple);
+        border-radius: 10px;
+      }
+
+      input[type="text"]::placeholder,
+      input[type="email"]::placeholder,
+      textarea::placeholder {
+        color: #fff;
+      }
+
+      input[type="text"]:hover,
+      input[type="email"]:hover,
+      textarea:hover {
+        border: 2px solid var(--green);
+      }
+
+      #checkboxPolicyDiv {
+        gap: 4px;
+        #checkboxPolicyInDiv {
+          gap: 10px;
+          #checkbox {
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 6px;
+            -webkit-appearance: none;
+            outline: none;
+            border: 2px solid var(--green);
+            position: relative;
+          }
+
+          #checkbox:checked {
+            border: 2px solid var(--green);
+          }
+
+          #checkbox:checked::after {
+            content: "✔";
+            color: var(--green);
+            font-size: 16px;
+            position: absolute;
+            top: 0;
+            left: 3px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+          #privacyPolicy {
+            color: var(--purple);
+            text-decoration: none;
+            cursor: pointer;
+          }
+          #privacyPolicy:hover {
+            text-decoration: underline;
+          }
+        }
+
+        #errorMsg {
+          width: 100%;
+          color: #e61c40;
+          font-size: 14px;
+        }
+      }
+
+      input[type="submit"]:disabled {
+        padding: 12px 16px;
+        font-size: 16px;
+        color: #fff;
+        background-color: #b6b6b6;
+        border: 2px solid #b6b6b6;
+        border-radius: 10px;
+        cursor: not-allowed;
+        transition: background-color 0.3s;
+      }
+
+      .enabled-button {
+        padding: 12px 16px;
+        font-size: 16px;
+        color: #fff;
+        background-color: var(--green);
+        border: 2px solid var(--green);
+        border-radius: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 320px) {
+    #privacyPolicyDiv {
+      font-size: 12px;
+    }
+    #hrLineContactDiv {
+      padding-top: 140px;
+      gap: 10px;
+      hr {
+        border: 2px solid var(--purple);
+        width: 12%;
+      }
+
+      h1 {
+        font-size: 50px;
+      }
+    }
+
+    #incitementContactDiv {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      padding-top: 40px;
+      padding-bottom: 120px;
+      #incitement {
+        width: 90%;
+        justify-content: center;
+        align-items: flex-start;
+        h1 {
+          font-size: 20px;
+        }
+        p {
+        }
+      }
+    }
+
+    #contactForm {
+      width: 90%;
+      form {
+        align-items: flex-start;
+        gap: 20px;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 481px) {
+    #hrLineContactDiv {
+      gap: 20px;
+      hr {
+        border: 2px solid var(--purple);
+        width: 26%;
+      }
+
+      h1 {
+        font-size: 50px;
+      }
+    }
+
+    #incitementContactDiv {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      padding-top: 40px;
+      padding-bottom: 120px;
+      #incitement {
+        width: 90%;
+        justify-content: center;
+        align-items: flex-start;
+        h1 {
+          font-size: 30px;
+        }
+        p {
+        }
+      }
+    }
+
+    #contactForm {
+      width: 90%;
+      form {
+        align-items: flex-start;
+        gap: 20px;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    #privacyPolicyDiv {
+      font-size: 14px;
+    }
+    #hrLineContactDiv {
+      padding-top: 140px;
+      gap: 30px;
+      hr {
+        border: 2px solid var(--purple);
+        width: 30%;
+      }
+
+      h1 {
+        font-size: 60px;
+      }
+    }
+
+    #incitementContactDiv {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      padding-top: 40px;
+      padding-bottom: 120px;
+      #incitement {
+        width: 90%;
+        justify-content: center;
+        align-items: flex-start;
+        h1 {
+        }
+        p {
+        }
+      }
+    }
+
+    #contactForm {
+      width: 90%;
+      form {
+        align-items: flex-start;
+        gap: 20px;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    #privacyPolicyDiv {
+      font-size: 16px;
+    }
+    #hrLineContactDiv {
+      padding-top: 140px;
+      gap: 30px;
+      hr {
+        border: 2px solid var(--purple);
+        width: 36%;
+      }
+
+      h1 {
+        font-size: 70px;
+      }
+    }
+
+    #incitementContactDiv {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-start;
+      padding-top: 40px;
+      padding-bottom: 120px;
+
+      #incitement {
+        width: 50%;
+        align-items: flex-start;
+        h1 {
+        }
+        p {
+        }
+      }
+    }
+
+    #contactForm {
+      width: 34%;
+      form {
+        align-items: flex-start;
+        gap: 20px;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    #hrLineContactDiv {
+      padding-top: 140px;
+      gap: 30px;
+      hr {
+        border: 2px solid var(--purple);
+        width: 36%;
+      }
+
+      h1 {
+        font-size: 74px;
+      }
+    }
+
+    #incitementContactDiv {
+      padding-top: 40px;
+      padding-bottom: 120px;
+      align-items: flex-start;
+      #incitement {
+        width: 40%;
+        align-items: flex-start;
+        h1 {
+        }
+        p {
+        }
+      }
+    }
+
+    #contactForm {
+      width: 34%;
+      form {
+        align-items: flex-start;
+        gap: 20px;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1400px) {
+    #hrLineContactDiv {
+      padding-top: 140px;
+      gap: 30px;
+      hr {
+        border: 2px solid var(--purple);
+        width: 36%;
+      }
+
+      h1 {
+        font-size: 90px;
+      }
+    }
+
+    #incitementContactDiv {
+      padding-top: 40px;
+      padding-bottom: 120px;
+      align-items: flex-start;
+      #incitement {
+        width: 40%;
+        align-items: flex-start;
+        h1 {
+        }
+        p {
+        }
+      }
+    }
+
+    #contactForm {
+      width: 34%;
+      form {
+        align-items: flex-start;
+        gap: 20px;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1600px) {
+    #hrLineContactDiv {
+      padding-top: 140px;
+      gap: 30px;
+      hr {
+        border: 2px solid var(--purple);
+        width: 36%;
+      }
+
+      h1 {
+        font-size: 90px;
+      }
+    }
+
+    #incitementContactDiv {
+      padding-top: 40px;
+      padding-bottom: 120px;
+      align-items: flex-start;
+      #incitement {
+        width: 30%;
+        align-items: flex-start;
+        h1 {
+        }
+        p {
+        }
+      }
+    }
+
+    #contactForm {
+      width: 34%;
+      form {
+        align-items: flex-start;
+        gap: 20px;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1900px) {
+    #hrLineContactDiv {
+      padding-top: 140px;
+      gap: 30px;
+      hr {
+        border: 2px solid var(--purple);
+        width: 36%;
+      }
+
+      h1 {
+        font-size: 90px;
+      }
+    }
+
+    #incitementContactDiv {
+      padding-top: 40px;
+      padding-bottom: 120px;
+      align-items: flex-start;
+      #incitement {
+        width: 30%;
+        align-items: flex-start;
+        h1 {
+        }
+        p {
+        }
+      }
+    }
+
+    #contactForm {
+      width: 34%;
+      form {
+        align-items: flex-start;
+        gap: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+:host {
+  div {
+    gap: 20px;
+    a {
+      text-decoration: none;
+
+      img {
+        width: 34px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+      }
+      img:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

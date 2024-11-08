@@ -1,0 +1,50 @@
+<div class="referencePhotoDiv flexContainerEnd" data-aos="flip-right">
+  <div class="referenceDiv flexContainerCol">
+    <p>{{ currentReference.reference | translate }}</p>
+    <div class="flexContainer">
+      <hr />
+      <p>{{ currentReference.name }}</p>
+    </div>
+  </div>
+  <div class="photoHrDiv flexContainerEnd">
+    <div class="photoDiv">
+      <img src="/assets/img/{{ currentReference.image }}" alt="photo" />
+    </div>
+    <div class="horizontalLine">
+      <hr />
+    </div>
+  </div>
+</div>
+
+<!-- Pagination and Arrows -->
+<div id="paginationDiv" class="flexContainer" data-aos="zoom-in">
+  <!-- Left arrow -->
+  <img
+    src="/assets/img/arrow-left.svg"
+    alt="Previous"
+    (click)="prevReference()"
+    class="arrow"
+  />
+
+  <!-- Dots for pagination -->
+  <div id="dots" class="flexContainer">
+    <!-- Dots for pagination -->
+    <img
+      *ngFor="let reference of referencesData; let i = index"
+      [src]="
+        '/assets/img/dot-' + (i === currentIndex ? 'purple' : 'green') + '.svg'
+      "
+      alt="dot"
+      (click)="goToReference(i)"
+      class="dot"
+    />
+  </div>
+
+  <!-- Right arrow -->
+  <img
+    src="/assets/img/arrow-right.svg"
+    alt="Next"
+    (click)="nextReference()"
+    class="arrow"
+  />
+</div>

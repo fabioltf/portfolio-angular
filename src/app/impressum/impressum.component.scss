@@ -1,0 +1,29 @@
+#privacyPolicyDiv {
+  position: fixed;
+  background-color: #141d2f;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  z-index: 99999;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+
+  #innerprivacyPolicyDiv {
+    padding: 10px;
+    #xCloseIcon {
+      width: 40px;
+      cursor: pointer;
+    }
+  }
+
+  #privacyPolicy {
+    color: var(--purple);
+    cursor: pointer;
+  }
+  #privacyPolicy:hover {
+    text-decoration: underline;
+  }
+}

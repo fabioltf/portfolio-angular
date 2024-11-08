@@ -1,0 +1,174 @@
+:host {
+  width: 100%;
+}
+
+:root {
+  --purple: #9747ff; // var(--purple)
+  --green: #70e61c; // var(--green)
+  --darkblue: #141d2f; // var(--darkblue)
+
+  --rosa: #e51076;
+  --blue: #11243d;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/Poppins.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.regularPoppins {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.boldPoppins {
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.none {
+  display: none !important;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+body {
+  position: relative;
+  color: #fff;
+  background-image: linear-gradient(to right, #151e31, #182134, #162032);
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.6;
+}
+
+app-header {
+  width: 100%;
+}
+
+.mainContainer {
+  width: 100%;
+}
+
+.flexContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexContainerAround {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flexContainerEvenly {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.flexContainerBetween {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flexContainerStart {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flexContainerEnd {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.flexContainerCol {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexContainerColEvenly {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.flexContainerColBetween {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flexContainerColStart {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flexContainerColEnd {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@media screen and (min-width: 2200px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+
+  app-root {
+    max-width: 2000px;
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "iam": "I am",
+  "frontend": "FRONTEND DEVELOPER",
+  "talk": "Let' talk",
+  "scroll": "Scroll down",
+  "aboutMe": "About Me",
+  "hi": "Hello, I am a German-speaking frontend developer from near Stuttgart. Motivated by the limitless possibilities in IT, I am excited to design visually appealing and intuitive websites and applications.",
+  "location": "I am flexible regarding work environments and can work effectively both on-site in Stuttgart and remotely.",
+  "idea": "I am open to new challenges and constantly strive to expand my knowledge and skills.",
+  "puzzle": "In my profession, programming is not just about writing code; it is a creative way to solve problems. I take pride in transforming complex technical challenges into simple, user-friendly solutions. In this way, I help you achieve your goals and bring your visions to life.",
+  "experience": "I have gained experience in developing projects using various frontend technologies and concepts.",
+  "looking": "Looking for",
+  "looking2": "another skill?",
+  "contactMe": "Feel free to contact me. I look forward to further expanding my knowledge.",
+  "discover": "Discover a selection of my work here – interact with the projects to see my skills in action.",
+  "projectDes": {
+    "join": "A task manager inspired by the Kanban system. Tasks can be assigned to users and moved into categories such as 'In Progress' or 'Completed' via drag-and-drop. User and task data have been loaded from and written to the Firebase database.",
+    "elpolloloco": "A jump, run, and throw game implemented with an object-oriented approach. Help Pepe find coins and Tabasco sauce to fight against the crazy hen.",
+    "pokemon": "Based on the PokéAPI, a simple library that provides and catalogs Pokémon information."
+  },
+  "portfolio": "A project created with Angular components, SCSS, and TypeScript.",
+  "lieferando": "An ordering application with features for the shopping cart, similar to the Lieferando app.",
+  "instagram": "The frontend of an application similar to Instagram, implemented with data from a JSON file and JavaScript templates. I used AI tools to create the JSON file as well as to generate images and photos.",
+  "references": {
+    "tai": "Working with Fabio has been consistently positive. He brings a friendly and supportive atmosphere to the team, enabling us to perform at our best. Even under pressure, Fabion remains calm and focused, always ready to help others. His ability to analyze problems and find creative solutions has often impressed me. With his structured approach and reliability, he has significantly contributed to the success of our projects. Fabion is a team player who writes clean, reusable code and takes a strong, design-oriented approach.",
+    "phil": "Fabio impressed with his ability to develop creative and well-structured solutions, effortlessly handling even the most challenging tasks. His professional, focused, and organized approach made him a valuable asset to the team. I particularly appreciated his calm demeanor and thoughtful problem-solving skills, which helped us move forward smoothly even in challenging situations. Fabion's sense of humor also contributed to a positive team atmosphere, fostering collaboration and motivation. I highly recommend Fabion.",
+    "heiko": "Fabion's quick and reliable implementation of even complex tasks in HTML, CSS, and JavaScript was impressive and invaluable to the project. His technical know-how and precise, efficient working style significantly contributed to the team's success. Moreover, Fabion has a very friendly demeanor, making it a pleasure to work with him.",
+    "marv": "Fabion has proven to be an extremely competent and dedicated project colleague in the field of programming. His quick understanding and ability to find creative and efficient solutions have been particularly impressive. He was always helpful and could provide quick and targeted support even with challenging tasks. Additionally, Fabion's exceptional commitment has contributed to the successful and timely completion of our projects. His solution-oriented work style and team spirit were of great value."
+  },
+  "contact": "Contact",
+  "needDev": "Need a Frontend Developer",
+  "contactMeForm": "Contact me through this form. I look forward to hearing from you, learning about your ideas, and contributing to your projects with my work.",
+  "placeholderName": "Your Full Name",
+  "placeholderEmail": "Your Email",
+  "placeholderMsg": "Your Message",
+  "nameReq": "Full Name is required",
+  "emailReq": "Email is required",
+  "msgReq": "Message is required",
+  "policy1": "I've read the",
+  "policy2": "privacy policy",
+  "policy3": "and agree to the processing of my data as outlined.",
+  "subBtn": "Send message :)",
+  "legNotice": "Legal Notice",
+  "germanLaw": "Information according to §5 TMG",
+  "infoWeCollect": {
+    "title": "1. Information We Collect",
+    "content": "We only collect personal information that you voluntarily provide to us through our contact form, such as your name and email address."
+  },
+  "useOfInfo": {
+    "title": "2. Use of Your Information",
+    "content": "The information you provide will only be used to respond to your inquiries or to provide you with the requested information. We do not use your information for marketing purposes."
+  },
+  "cookies": {
+    "title": "3. Cookies",
+    "content": "Our website does not use cookies or similar tracking technologies. We do not track your activity on our site or collect information about your browsing behavior."
+  },
+  "noUserRegistration": {
+    "title": "4. No User Registration",
+    "content": "Our website is a static portfolio site, and it does not allow user registration. Therefore, we do not store any user account information."
+  },
+  "dataSecurity": {
+    "title": "5. Data Security",
+    "content": "We take reasonable measures to protect your personal information from unauthorized access, disclosure, alteration, or destruction."
+  },
+  "thirdPartyLinks": {
+    "title": "6. Third-Party Links",
+    "content": "Our website may contain links to third-party sites. We are not responsible for the privacy practices or content of those sites."
+  },
+  "changesToPolicy": {
+    "title": "7. Changes to This Privacy Policy",
+    "content": "We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy on this page."
+  },
+  "contactUs": {
+    "title": "8. Contact Us",
+    "content": "If you have any questions or concerns about this Privacy Policy, please contact us via the contact form on our website."
+  }
+}
